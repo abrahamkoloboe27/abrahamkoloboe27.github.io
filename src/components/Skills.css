@@ -1,0 +1,71 @@
+.skills-section {
+  background: linear-gradient(to bottom, var(--color-bg), #12151f, var(--color-bg));
+}
+
+.skills-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.skill-category-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.skill-icon {
+  font-size: 1.6rem;
+}
+
+.skill-category h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  background: rgba(108, 99, 255, 0.12);
+  color: var(--color-primary-light);
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  border: 1px solid rgba(108, 99, 255, 0.2);
+}
+
+/* Tech cloud */
+.tech-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.tech-chip {
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--chip-color, var(--color-primary));
+  background: rgba(108, 99, 255, 0.12);
+  background: color-mix(in srgb, var(--chip-color, var(--color-primary)) 12%, transparent);
+  border: 1px solid rgba(108, 99, 255, 0.3);
+  border-color: color-mix(in srgb, var(--chip-color, var(--color-primary)) 30%, transparent);
+  transition: var(--transition);
+  cursor: default;
+}
+
+.tech-chip:hover {
+  background: rgba(108, 99, 255, 0.25);
+  background: color-mix(in srgb, var(--chip-color, var(--color-primary)) 25%, transparent);
+  transform: translateY(-2px);
+}
